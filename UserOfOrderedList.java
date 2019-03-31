@@ -27,5 +27,12 @@ public class UserOfOrderedList {
 
         System.out.println("Expected: 1");
         System.out.println("Actual: " + orderedList.find(4));
+
+        orderedList.add(4);
+        System.out.println("Expected: [1, 4, 4, 5]");
+        System.out.println("Actual: " + orderedList);
+
+        System.out.println("Expected: 1");
+        System.out.println("Actual: " + orderedList.find(4));
     }
 }
