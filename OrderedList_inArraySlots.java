@@ -30,7 +30,7 @@ public class OrderedList_inArraySlots {
     }
 
     public int find(Integer value) {
-        return find(0, internalList.size(), value);
+        return find(0, internalList.size() - 1, value);
     }
 
     private int find(int start, int end, Integer value) {
@@ -63,6 +63,10 @@ public class OrderedList_inArraySlots {
 
     public Integer get(Integer index) {
         return internalList.get(index);
+    }
+
+    public int size() {
+        return internalList.size();
     }
 
     public String toString() {

@@ -34,5 +34,10 @@ public class UserOfOrderedList {
 
         System.out.println("Expected: 1");
         System.out.println("Actual: " + orderedList.find(4));
+
+        orderedList.add(9);
+
+        System.out.println("Expected: [1, 4, 4, 5, 9]");
+        System.out.println("Actual: " + orderedList);
     }
 }
